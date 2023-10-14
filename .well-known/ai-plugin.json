@@ -9,10 +9,10 @@
     },
     "api": {
       "type": "openapi",
-      "url": "https://osgpt.ravi-tejateja49.repl.co//openapi.yaml",
+      "url": "http://localhost:5004/openapi.yaml",
       "is_user_authenticated": false
     },
-    "logo_url": "https://osgpt.ravi-tejateja49.repl.co//logo.png",
+    "logo_url": "http://localhost:5004/logo.png",
     "contact_email": "plugins@aicodecraft.io",
     "legal_info_url": "https://aicodecraft.io/plugin-legal.html"
 }
