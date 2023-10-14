@@ -11,7 +11,7 @@ See [OSGPT in ChatGPT Plus with GPT4](img/shellmaster0.png)
 
 ## 🎥 Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/Xy6vNqoW2wk/maxresdefault.jpg)](https://www.youtube.com/watch?v=Xy6vNqoW2wk)
+[![Demo Video](https://img.youtube.com/vi/Xy6vNqoW2wk/hqdefault.jpg)](https://www.youtube.com/watch?v=Xy6vNqoW2wk)
 
 
 ## Features
