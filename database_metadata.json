@@ -1,0 +1,10 @@
+{
+    "personal_files": {
+        "db_path": "databases/personal_files",
+        "folder_path": "/home/runner/OSGPT/OSGPT/docs"
+    },
+    "technical_files": {
+        "db_path": "databases/technical_files",
+        "folder_path": "/home/runner/OSGPT/OSGPT/technical_files"
+    }
+}

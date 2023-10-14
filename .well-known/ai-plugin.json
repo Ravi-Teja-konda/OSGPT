@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "OS GPT",
+    "name_for_model": "Command",
+    "description_for_human": "Plugin for executing CLI commands on the host system like Linux or Windows and searching documents based on queries.",
+    "description_for_model": "Plugin for executing CLI commands on the host system like Linux / Unix or Windows and searching documents based on queries. Also, it can dynamically load documents from specified folders and create searchable vector databases. Output the results as markdown.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "https://osgpt.ravi-tejateja49.repl.co//openapi.yaml",
+      "is_user_authenticated": false
+    },
+    "logo_url": "https://osgpt.ravi-tejateja49.repl.co//logo.png",
+    "contact_email": "plugins@aicodecraft.io",
+    "legal_info_url": "https://aicodecraft.io/plugin-legal.html"
+}

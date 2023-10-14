@@ -1,0 +1,10 @@
+{
+    "_comment": "This is the working directory for commands",
+    "working_directory_unix": "/tmp",
+    "working_directory_windows": "%TEMP%",
+    "OPENAI_API_KEY": "",
+    "DOCUMENTS_PATH": "/home/runner/OSGPT/OSGPT/docs",
+    "METADATA_FILE_PATH": "/home/runner/OSGPT/OSGPT/database_metadata.json",
+    "HOST": "0.0.0.0",
+    "PORT": 5004
+}

@@ -1,0 +1,135 @@
+openapi: 3.0.1
+info:
+  title: OS GPT
+  description: A plugin that executes shell commands on the host PC using ChatGPT Plus, supporting both UNIX-like and Windows systems. Additionally, it can load and query documents from specified folders using vector databases.
+  version: 'v1'
+  x-logo:
+    url: "file://logo.png"
+servers:
+  - url: https://osgpt.ravi-tejateja49.repl.co
+paths:
+  /command:
+    post:
+      operationId: executeCommand
+      summary: Execute a shell command
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                command:
+                  type: string
+                  description: The command to execute. Be careful, commands are executed as is.
+      responses:
+        "200":
+          description: Command executed successfully
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: The output of the command.
+        "400":
+          description: Invalid request, command not provided
+        "500":
+          description: An error occurred while executing the command
+  /load-data:
+    post:
+      operationId: loadData
+      summary: Load documents from the provided folder and create a vector database
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                folder_path:
+                  type: string
+                  description: The path to the folder containing the documents to be loaded.
+                dataset_name:
+                  type: string
+                  description: The name for the dataset, used as an identifier.
+      responses:
+        "200":
+          description: Database creation completed successfully
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: Confirmation message indicating successful database creation.
+        "400":
+          description: Invalid request, folder_path or dataset_name not provided
+        "500":
+          description: An error occurred during the document loading or database creation
+  /query-data:
+    post:
+      operationId: queryData
+      summary: Query a specific vector database using a provided query and dataset name
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: The query to search in the database.
+                dataset_name:
+                  type: string
+                  description: The name of the dataset (previously loaded) to be queried.
+      responses:
+        "200":
+          description: Query completed successfully
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: The formatted output containing relevant document segments.
+        "400":
+          description: Invalid request, query or dataset_name not provided
+        "404":
+          description: No database found for the given dataset_name
+        "500":
+          description: An error occurred during the query process
+  /get-db-info:
+    post:
+      operationId: getDbInfo
+      summary: Retrieve database or folder path information based on the dataset name and query type
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                dataset_name:
+                  type: string
+                  description: The name of the dataset (previously loaded) for which the path information is required.
+                query_type:
+                  type: string
+                  enum: ['db_path', 'folder_path']
+                  description: The type of path information required ('db_path' for database path, 'folder_path' for folder path).
+      responses:
+        "200":
+          description: Information retrieval completed successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  db_path:
+                    type: string
+                    description: The database path for the specified dataset (if query_type is 'db_path').
+                  folder_path:
+                    type: string
+                    description: The folder path for the specified dataset (if query_type is 'folder_path').
+        "400":
+          description: Invalid request, dataset_name or query_type not provided
+        "404":
+          description: No information found for the given dataset_name or query_type
+        "500":
+          description: An error occurred during the information retrieval process
+  

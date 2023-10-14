@@ -1,0 +1,18 @@
+asyncio
+json
+logging
+os
+subprocess
+quart
+quart-cors
+
+# For Document retrieval langchain
+PyPDFLoader
+Docx2txtLoader
+TextLoader
+CSVLoader
+UnstructuredHTMLLoader
+OpenAIEmbeddings
+Chroma
+CharacterTextSplitter
+nltk
