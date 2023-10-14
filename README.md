@@ -1,7 +1,7 @@
 # 🚀 OSGPT: Accelerate Smart file Searches & Command Line Feats (ChatGPT 4 Plugin)
 #### checked 14.10.2023 (works well)
 
-![OSGPT](OSGPT/logo.png)
+
 OSGPT is a powerful plugin designed to dynamically load documents from specified folders and create searchable vector databases. Not only does it offer a quick way to query from your documents, but it also allows you to execute CLI commands on the host system, be it Linux/Unix or Windows.
 
 ⚠️ Please note that this is a plugin for ChatGPT Plus! In order to use it, you'll need access to ChatGPT Plus Account. As with all powerful tools, remember to use this responsibly and always be mindful of the potential security and privacy implications.
