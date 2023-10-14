@@ -6,7 +6,7 @@ info:
   x-logo:
     url: "file://logo.png"
 servers:
-  - url: https://osgpt.ravi-tejateja49.repl.co
+  - url: http://localhost:5004
 paths:
   /command:
     post:
