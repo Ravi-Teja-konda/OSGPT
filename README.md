@@ -147,6 +147,7 @@ Contributions are welcome! Please feel free to submit a pull request.
 If you appreciate my work, please consider supporting me:
 - :star: my projects: Starring projects on GitHub helps increase their visibility and can help others find my work.
 
+## References
 This repo is an extended version of ChatGPT-ShellMaster which adds the features of file searching and dynamic loading of file capabilities.
 
 ### Copyright
