@@ -9,7 +9,7 @@ OSGPT is a powerful plugin designed to dynamically load documents from specified
 See [OSGPT in ChatGPT Plus with GPT4](img/shellmaster0.png)
 
 
-🎥 **Demo Video**: [Watch the demo video here]((https://youtu.be/Xy6vNqoW2wk))
+🎥 **Demo Video**: [https://youtu.be/Xy6vNqoW2wk]
 
 ## Features
 
