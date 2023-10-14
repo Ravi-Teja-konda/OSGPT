@@ -27,13 +27,9 @@ Configuration support: Configure the working directory for command execution for
 With OSGPT, you get the best of both worlds—a chatbot that understands your tasks and a powerful CLI engine that performs them. Say goodbye to the days of juggling multiple windows and hello to the interactive computing.
 
 ## useful custom instructions
+- [Custom Instructions for better working of plugin](https://github.com/VolkanSah/ChatGPT-ShellMaster/blob/main/prompts/Handling-Large-Files.md)https://github.com/Ravi-Teja-konda/OSGPT/blob/main/prompts/Custom_Instructions.md
 
-### Overview
-Logo | Name | System
--- | -- | --
-![Logo Cross-Platform Command Execution Plugin](logo.png) |  ChatGPT-ShellMaster Cross-Platform Command Execution Plugin | Unix/linux
-![Logo Cross-Platform Command Execution Plugin](logo-cmd.png) | Works, but with limitations | Windows
-
+  
 ## Installation
 1. Clone the repository:
  ```bash
