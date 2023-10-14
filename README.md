@@ -1,5 +1,5 @@
 # 🚀 OSGPT: Accelerate Smart file Searches & Command Line Feats (ChatGPT 4 Plugin)
-#### checked 13.10.2023 (works well)
+#### checked 14.10.2023 (works well)
 
 ![OSGPT](OSGPT/logo.png)
 OSGPT is a powerful plugin designed to dynamically load documents from specified folders and create searchable vector databases. Not only does it offer a quick way to query from your documents, but it also allows you to execute CLI commands on the host system, be it Linux/Unix or Windows.
@@ -26,14 +26,14 @@ Configuration support: Configure the working directory for command execution for
 ### Unleashing the Future of Interactive Computing
 With OSGPT, you get the best of both worlds—a chatbot that understands your tasks and a powerful CLI engine that performs them. Say goodbye to the days of juggling multiple windows and hello to the interactive computing.
 
-## useful custom instructions
-- [Custom Instructions for better working of plugin](https://github.com/VolkanSah/ChatGPT-ShellMaster/blob/main/prompts/Handling-Large-Files.md)https://github.com/Ravi-Teja-konda/OSGPT/blob/main/prompts/Custom_Instructions.md
+## Useful custom instructions
+- [Custom Instructions for better working of plugin](https://github.com/Ravi-Teja-konda/OSGPT/blob/main/prompts/Custom_Instructions.md)
 
   
 ## Installation
 1. Clone the repository:
  ```bash
- git clone 
+ git clone https://github.com/Ravi-Teja-konda/OSGPT.git
 ```
 2. Navigate to the project directory:
 ```bash
@@ -46,20 +46,20 @@ pip install -r requirements.txt
 
 ## Configuration Settings in settings.json
 
-Working Directory for Commands
+### Working Directory for Commands
 working_directory_unix: This is the working directory where commands will be executed when running OSGPT on a Unix/Linux system. The default directory is /tmp, which is recommended for its safety and security.
 
 working_directory_windows: Similar to the Unix setting, this is the directory where commands will be executed when running OSGPT on a Windows system. The default is %TEMP%.
 
 Note: Ensure that the directory you choose has a minimum chmod of 700 for Unix/Linux and appropriate permissions for Windows to maintain security.
 
-OpenAI API Key
+### OpenAI API Key
 OPENAI_API_KEY: This is the API key for OpenAI, which is essential for utilizing the GPT models. Replace the placeholder with your actual API key.
 
-Metadata File Path
+### Metadata File Path
 METADATA_FILE_PATH: This is where the metadata for the indexed database will be stored.
 
-Host and Port
+### Host and Port
 HOST: This is the host IP address where the OSGPT server will run. The default is 0.0.0.0, which means it will be accessible from any IP address.
 PORT: This is the port number on which the OSGPT server will listen for incoming requests. The default port is 5004.
 
@@ -75,6 +75,8 @@ In my example, I used localhost:5004. You can use another port such as 2323 or 8
 
 To use this plugin, you'll need to send a POST request to the /command endpoint of the server. The request should contain a JSON body with a command field, representing the command you wish to execute.
 
+### Command execution
+
 Example:
 ```json
 {
@@ -83,7 +85,7 @@ Example:
 ```
 Alternatively, you can simplify your workflow by directly instructing ChatGPT, saying: "You have access to my CLI, please execute ...". The rest will be taken care of for you!
 
-Using OS GPT to Load Datasets and Query Information
+### Using OS GPT to Load Datasets and Query Information
 
 Loading Datasets
 OS GPT offers the ability to dynamically load documents from specified folders and create searchable vector databases. You can use this feature to, for example, load a folder named technical_files as a dataset and then query it for specific information.
@@ -102,12 +104,14 @@ Here's an example request to load the folder located at /home/runner/OSGPT/OSGPT
 Upon successful execution, you should receive a response like:
 
 ```json
-Database for technical_files created successfully!
+{
+  "Database for technical_files created successfully!"
+}
 ```
-If your data set so huge the load_data will take much time to complete the database.Which may throw the error in your chatgpt interface
+Note: If your folder size is so huge the load_data will take much time to complete the database.Which may throw the error in your chatgpt interface
 But the database will be created, Once the database is created you see the info from the settings.json file
 
-Querying for Specific Information
+### Querying for Specific Information
 Once the dataset is loaded, you can query it for specific information. For example, if you want to find documents or files related to "langchain" within the technical_files database, you can do so by sending a POST request to the /query_data endpoint.
 
 The request should contain a JSON body specifying the query and dataset_name.
@@ -128,10 +132,10 @@ Upon successful execution, OS GPT will search the technical files database for a
 Please be aware that this plugin executes commands as-is, without any sanitization or security checks. Make sure to only use it in a secure and controlled environment, and do not expose the server to the public internet. This ChatGPT Plugin is designed for developers, and should not be deployed on production servers! Use it only on localhost!
 
 ## 🚀 Future Enhancements
-GPT Vision Capabilities
+### GPT Vision Capabilities
 We're incredibly excited about the imminent release of the GPT Vision API. As soon as it becomes available, we plan to integrate image analysis features into OSGPT. This will enable users to query not just text-based documents but also images, unlocking a whole new dimension of usability. Please note that as of the current version, ChatGPT doesn't support the simultaneous use of plugins and vision capabilities. We're looking forward to this integration as future releases allow.
 
-## Advanced Data Analysis
+### Advanced Data Analysis
 We understand the value of data, and we're committed to providing advanced analysis features in the coming days. Whether you're working with Excel spreadsheets or CSV files, OSGPT will offer the tools you need to make sense of your data. Stay tuned for updates!
 
 ## Contributing
