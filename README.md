@@ -10,7 +10,7 @@ See [OSGPT in ChatGPT Plus with GPT4](img/shellmaster0.png)
 
 
 🎥 **Demo Video**: [https://youtu.be/Xy6vNqoW2wk]
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)]([(https://youtu.be/Xy6vNqoW2wk]))
+[![IMAGE ALT TEXT HERE](https://github.com/Ravi-Teja-konda/OSGPT/blob/main/logo.png)]([(https://youtu.be/Xy6vNqoW2wk]))
 
 ## Features
 
