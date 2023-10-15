@@ -16,9 +16,8 @@ See [OSGPT in ChatGPT Plus with GPT4](img/shellmaster0.png)
 
 ## Features
 
-### Dynamic File Management
-Advanced Search: Searching for documents on your system can be a cumbersome task, especially when dealing with a vast number of files across multiple directories. OSGPT intuitive file search mechanism.
-Auto-Loading: Automatically loads documents from specified directories into a searchable vector database.
+### Chat Your Way Through File Management
+Imagine having a conversation with your operating system, where you can effortlessly search and manage your info from your files just by chatting. With OSGPT, you can do exactly that. It transforms file management into a dynamic, interactive experience. No more shifting through multiple directories or using complex search queries; OSGPT's advanced search capabilities simplify the often cumbersome task of finding info from documents across multiple directories. Plus, its auto-loading feature automatically loads documents from specified directories into a searchable vector database, making your files instantly accessible.
 
 ### CLI Capabilities
 Full Control: Execute any CLI command directly from the chat interface.
@@ -64,6 +63,15 @@ METADATA_FILE_PATH: This is where the metadata for the indexed database will be 
 ### Host and Port
 HOST: This is the host IP address where the OSGPT server will run. The default is 0.0.0.0, which means it will be accessible from any IP address.
 PORT: This is the port number on which the OSGPT server will listen for incoming requests. The default port is 5004.
+
+## Additional Info
+If there is a change in the host address, make sure to update the following files:
+
+1. ai-plugin.json
+Update the url field under the api key with the new OpenAPI URL.
+Update the logo_url field with the new logo URL if applicable.
+2. openapi.yaml
+Update the url field under servers with the new host address.
 
 ## Usage
 To get started, run the plugin using the following command:
