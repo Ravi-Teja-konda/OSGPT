@@ -1,4 +1,4 @@
-# 🚀 OSGPT: Accelerate Smart file Searches & Command Line Feats (ChatGPT 4 Plugin)
+# 🚀 OSGPT: File Content Discovery & Dynamic Folder Access and Enhanced Chat for Command Line" (ChatGPT 4 Plugin)
 #### checked 14.10.2023 (works well)
 
 
@@ -24,7 +24,7 @@ Full Control: Execute any CLI command directly from the chat interface.
 Multiple commands: Handle multiple commands simultaneously with asynchronous execution.
 Configuration support: Configure the working directory for command execution for flexibility and security.
 
-### Unleashing the Future of Interactive Computing
+### Unleashing the power of Interactive Computing
 With OSGPT, you get the best of both worlds—a chatbot that understands your tasks and a powerful CLI engine that performs them. Say goodbye to the days of juggling multiple windows and hello to the interactive computing.
 
 ## Useful custom instructions
