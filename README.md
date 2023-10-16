@@ -27,7 +27,7 @@ Configuration support: Configure the working directory for command execution for
 ### Unleashing the power of Interactive Computing
 With OSGPT, you get the best of both worlds—a chatbot that understands your tasks and a powerful CLI engine that performs them. Say goodbye to the days of juggling multiple windows and hello to the interactive computing.
 
-## Useful custom instructions
+## 📣 Useful custom instructions
 - [Custom Instructions for better working of plugin](https://github.com/Ravi-Teja-konda/OSGPT/blob/main/prompts/Custom_Instructions.md)
 
   
@@ -155,7 +155,7 @@ Contributions are welcome! Please feel free to submit a pull request.
 If you appreciate my work, please consider supporting me:
 - :star: Starring projects on GitHub helps increase their visibility and can help others find my work.
 
-## References
+## 📚 References
 This repo is an extended version of ChatGPT-ShellMaster which adds the features of file searching and dynamic loading of file capabilities.
 
 ### Copyright
