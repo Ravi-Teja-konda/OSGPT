@@ -1,4 +1,4 @@
-# 🚀 OSGPT: File Content Discovery & Dynamic Folder Access and Enhanced Chat for Command Line" (ChatGPT 4 Plugin)
+# 🚀 OSGPT: File Content Discovery , Dynamic Folder Access and Enhanced Chat for Command Line" (ChatGPT 4 Plugin)
 #### checked 14.10.2023 (works well)
 
 
