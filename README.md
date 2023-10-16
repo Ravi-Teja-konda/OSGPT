@@ -1,5 +1,5 @@
 # 🚀 OSGPT: File Content Discovery , Dynamic Folder Access and Enhanced Chat for Command Line (ChatGPT 4 Plugin)
-#### checked 14.10.2023 (works well)
+#### checked 16.10.2023 ✅
 
 
 OSGPT is a powerful plugin designed to dynamically load documents from specified folders and create searchable vector databases. Not only does it offer a quick way to query from your documents, but it also allows you to execute CLI commands on the host system, be it Linux/Unix or Windows.
